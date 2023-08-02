@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Module | Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="name">
+            <p>Rock</p>
+            <p>Paper</p>
+            <p>Scissors</p>
+        </div>
+        <div class="UserScore">
+            <p class="Score" >User Score</p>
+            <h1 id="ScoreUser">0</h1>
+        </div>
+        <div class="CompScore">
+            <p class="Score" >Computer Score</p>
+            <h1 id="ScoreComp">0</h1>
+        </div>
+    </div>
+
+
+    <div class="boddy">
+        <div class="hand  btn">
+            <img src="rock.png" alt="Rock" onclick="UserPick('rock')">
+        </div>
+        <div class="hand  btn2">
+            <img src="paper.png" alt="Paper" onclick="UserPick('paper')">
+        </div>
+        <div class="hand  btn3">
+            <img src="scissors.png" alt="Scissors" onclick="UserPick('scissors')"> 
+        </div>
+    </div>
+    <div class="contest">       
+        <div class="userhand">
+            <h1>YOU PICKED</h1>
+            <div class="handImageContainer">
+              <img id="userPickImage" src="/assets/Paper.png">
+            </div>
+        </div>
+        <div class="referee"> 
+            <div class="decision"><h1> YOU WIN! </h1></div>
+            <div class="newGame" onclick="restartGame()">PLAY AGAIN</div>
+        </div>
+        <div class="computerhand">
+            <h1>THE HOUSE PICKED</h1>
+            <div class="handImageContainer">
+              <img id="computerPickImage" src='/assets/Paper.png' /> 
+            </div>   
+        </div>       
+    </div>
+    <div class="footer">
+        <div class="rules" onclick="ruleSet()">Rules</div>
+        <div class="ruleset"><img src="Group 4.png" alt=""></div>
+        <div class="next">Next</div>
+    </div>
+    <script src="App.js"></script>
+</body>
+
+</html>
